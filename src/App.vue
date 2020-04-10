@@ -1,27 +1,33 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <toDoList msg="ToDoList App"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import toDoList from './components/todo.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+		toDoList,
   }
 }
 </script>
 
 <style lang="stylus">
+@font-face {
+	font-family: 'Arial';
+	src: url('~@/assets/arial.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
 #app
-  font-family Avenir, Helvetica, Arial, sans-serif
-  -webkit-font-smoothing antialiased
-  -moz-osx-font-smoothing grayscale
-  text-align center
-  color #2c3e50
-  margin-top 60px
+	font-family 'Arial', sans-serif
+	-webkit-font-smoothing antialiased
+	-moz-osx-font-smoothing grayscale
+	color #2c3e50
+	margin-top 60px
+	h1
+		text-align center
 </style>
