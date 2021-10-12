@@ -1,0 +1,12 @@
+{
+	"files": [
+			"../src/js/script.ts",
+			"../src/modules/header/script.ts"
+	],
+	"compilerOptions": {
+			"module": "system",
+			"sourceMap": true,
+			"noImplicitAny": true,
+			"outFile": "script.js"
+	}
+}
